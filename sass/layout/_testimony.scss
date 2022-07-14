@@ -1,0 +1,71 @@
+.testimony {
+  padding: 12rem;
+  font-size: 2rem;
+  background-color: black;
+  @media only screen and(max-width:37.5em) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &__heading {
+    margin-left: 6rem;
+  }
+  &__arrow {
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &__whole {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__head {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  &__boxes {
+    margin-top: 8rem;
+    justify-content: space-between;
+    display: flex;
+    overflow-x: hidden;
+    &--box {
+      background-color: #1f1f1f;
+      min-width: 35%;
+      padding: 4rem 3rem;
+      position: relative;
+      transition: 0.4s;
+      //   transform: translateX(-100%);
+      margin-left: 2.5rem;
+
+      margin-right: 2.5rem;
+      @media only screen and(max-width:81.25em) {
+        min-width: 50vw;
+      }
+      @media only screen and(max-width:37.5em) {
+        min-width: 90vw;
+      }
+    }
+  }
+  &__text {
+    line-height: 1.7;
+    font-size: 1.85rem;
+    max-width: 80%;
+  }
+  &__user {
+    display: flex;
+
+    &--img {
+      width: 5rem;
+      height: 5rem;
+      margin-right: 1rem;
+    }
+    &--details {
+      &-name {
+        color: white;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+.heading__1 {
+  font-size: 7.2rem;
+  letter-spacing: -2px;
+  color: white;
+  line-height: 8rem;
+  font-weight: 700;
+  @media only screen and(max-width:37.5em) {
+    font-size: 6rem;
+  }
+
+  &__black {
+    color: black;
+  }
+  &--normal {
+    font-size: 6.5rem;
+    @media only screen and(max-width:37.5em) {
+      font-size: 4.5rem;
+    }
+  }
+  &--gradient {
+    background-image: linear-gradient(
+      to right,
+      $color-purple,
+      $color-purple-light-primary
+    );
+    color: transparent;
+
+    -webkit-background-clip: text;
+  }
+}
+.text {
+  font-size: $default-font-size;
+  &--res {
+    @media only screen and(max-width:37.5em) {
+      max-width: 70vw;
+    }
+  }
+}
+.line {
+  width: 100%;
+  height: 0.5px;
+  background-color: rgba($color-white, 0.2);
+  //   color: white;
+}
+.heading__3 {
+  font-size: 3rem;
+  letter-spacing: -1px;
+  color: white;
+
+  font-weight: 600;
+}
+.gradient-border {
+  position: absolute;
+  background-image: linear-gradient(
+    90deg,
+    $color-purple,
+    $color-purple-light-primary 28%,
+    $color-purple-light-tertiary,
+    $color-purple-secondary 60%
+  );
+  height: 5px;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  left: 0;
+}
+.heading__1-special {
+  font-size: 6.5rem;
+
+  letter-spacing: -2px;
+
+  line-height: 8rem;
+  font-weight: 700;
+
+  color: black;
+  @media only screen and(max-width:37.5em) {
+    font-size: 5.5rem;
+  }
+}
+.heading__4 {
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-right: 3rem;
+}
+.btn--view {
+  background-image: linear-gradient(
+    to right,
+    $color-purple,
+    $color-purple-light-primary,
+    $color-purple-light-tertiary
+  );
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  outline: none;
+  border: 0;
+  color: white;
+  // font-size: 1.2;
+}
+.btn--1 {
+  background-image: linear-gradient(
+    to right,
+    $color-purple,
+    $color-purple-light-primary,
+    $color-purple-light-tertiary
+  );
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.heading {
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+}
+.heading--name {
+  font-size: 6rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: black;
+  // display: block;
+  display: flex;
+  flex-direction: column;
+  @media only screen and(max-width:37.5em) {
+    font-size: 5rem;
+  }
+}
+.heading-3 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: black;
+}

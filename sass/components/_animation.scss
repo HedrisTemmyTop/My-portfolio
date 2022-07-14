@@ -1,0 +1,14 @@
+@keyframes skewMove {
+  0% {
+    transform: rotate(20deg) translateY(20rem);
+    height: 20%;
+  }
+  50% {
+    height: 50%;
+  }
+
+  100% {
+    transform: rotate(0) translateY(0);
+    height: 100%;
+  }
+}

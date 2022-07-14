@@ -1,0 +1,69 @@
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  // height: 85vh;
+  padding-top: 6rem;
+  // min-width: 120rem;
+  padding-bottom: 10rem;
+  flex-wrap: wrap;
+  background-color: black;
+
+  @media only screen and(max-width:75em) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__myimg {
+    // transform: rotate(20deg) translateY(10rem);
+    max-width: 60rem;
+    animation: skewMove 1s linear;
+    @media only screen and(max-width:31.25em) {
+      max-width: 50rem;
+    }
+  }
+
+  &__left {
+    width: 60rem;
+    @media only screen and(max-width:75em) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+.btn--book {
+  width: 25rem;
+  height: 6rem;
+  font-size: 1.6rem;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  outline: none;
+  border: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  background: linear-gradient(
+    to top right,
+    $color-purple,
+    $color-purple-light-primary,
+    $color-purple-secondary,
+    $color-purple-light-tertiary
+  );
+}
+.right-arrow {
+  //   width: 10rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+  color: black;
+  background-color: white;
+  font-size: 2rem;
+}
+
+.associates {
+  background-color: black;
+  display: flex;
+  padding-top: 6rem;
+  flex-direction: column;
+  align-items: center;
+}

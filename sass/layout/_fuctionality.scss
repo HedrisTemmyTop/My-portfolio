@@ -1,0 +1,108 @@
+.insight {
+  background-color: #f2f2f2;
+  padding: 10rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    @media only screen and(max-width:75em) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    & > * {
+      &:not(last-child) {
+        margin-right: 4rem;
+
+        @media only screen and(max-width:75em) {
+          margin-bottom: 4rem;
+          margin-right: 0;
+        }
+      }
+    }
+    // flex-direction: column;
+
+    &--img {
+      width: 65vw;
+      max-width: 56.4rem;
+      @media only screen and (max-width: 31.25em) {
+        width: 100vw;
+      }
+    }
+    &--below {
+      // margin-top: .5rem;
+      width: 65vw;
+      max-width: 56.4rem;
+      background-color: black;
+      //   height: 10rem;
+      padding: 2rem 4rem;
+      @media only screen and (max-width: 31.25em) {
+        width: 100vw;
+      }
+      &-text {
+        display: flex;
+        text-transform: uppercase;
+        & > * {
+          &:not(last-child) {
+            margin-right: 2rem;
+          }
+        }
+        // margin-top: 2rem;
+        // margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__head {
+    max-width: 60rem;
+    // justify-self: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  &__box {
+    display: flex;
+    background-color: white;
+    &--img {
+      height: 100%;
+    }
+    @media only screen and (max-width: 31.25em) {
+      width: 100vw;
+      height: 20rem;
+    }
+    // &__img {
+    //   max-height: 13.5rem;
+    // }
+
+    &:not(last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &--content {
+      // display: flex;
+      display: flex;
+      padding-right: 4rem;
+      align-items: center;
+      justify-content: space-between;
+      // max-height: ;
+    }
+  }
+}
+.texts {
+  display: flex;
+  & > * {
+    margin-left: 2rem;
+  }
+}
+.btn--text {
+  margin-left: 2rem;
+  display: flex;
+}

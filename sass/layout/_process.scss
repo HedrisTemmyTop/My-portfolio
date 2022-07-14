@@ -1,0 +1,109 @@
+.process {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 10rem 0;
+  background-color: black;
+  @media only screen and(max-width:62.5rem) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and(max-width:37.5em) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  &__boxes {
+    background-image: linear-gradient(
+      to top right,
+      $color-purple,
+      $color-purple-light-primary,
+      $color-purple-secondary,
+      $color-purple-light-tertiary,
+      $blue-light
+    );
+
+    padding: 4rem;
+
+    &--box {
+      background-color: white;
+      padding: 1rem;
+      display: grid;
+
+      color: rgba(0, 0, 0, 0.7);
+      grid-template-columns: 5rem 35rem;
+      grid-column-gap: 2rem;
+      &:not(last-child) {
+        margin-bottom: 2rem;
+      }
+
+      &-text {
+        grid-column: 2/3;
+      }
+    }
+  }
+}
+
+.contact__form {
+  background-color: #101010;
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  overflow-y: hidden;
+  transition: 0.3s;
+  z-index: 300;
+  position: absolute;
+  // position: relative;
+
+  &__close {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+}
+.form {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  transform: translate(-50%, -50%);
+}
+.btn--send {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: black;
+  border: 0;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn--download {
+  justify-content: space-around;
+}
+.form__input {
+  width: 30rem;
+  height: 4rem;
+  font-size: inherit;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  border: 0;
+  outline: none;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.show {
+  height: 100vh;
+  visibility: visible;
+  position: absolute;
+}
