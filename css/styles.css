@@ -44,7 +44,8 @@ body {
   position: relative; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 .section--hidden {
   opacity: 0;
@@ -543,7 +544,7 @@ a {
         line-height: 1.7; } }
   .projects__details {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-row-gap: 1.6rem;
     grid-column-gap: 1.6rem; }
