@@ -120,6 +120,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   background-image: linear-gradient(to right, #bd10c3, #cd1590, #f3a3a3);
   width: 3rem;
   height: 3rem;
@@ -159,6 +160,12 @@ a {
   font-weight: 600;
   line-height: 2rem;
   color: black; }
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .section-margin {
   margin-top: 20rem; }
@@ -550,6 +557,7 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-row-gap: 1.6rem;
+    font-size: 1.4rem;
     grid-column-gap: 1.6rem; }
     .projects__details--head {
       color: #666;
