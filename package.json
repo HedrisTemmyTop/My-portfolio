@@ -1,0 +1,22 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HedrisTemmyTop/My-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HedrisTemmyTop/My-portfolio/issues"
+  },
+  "homepage": "https://github.com/HedrisTemmyTop/My-portfolio#readme",
+  "dependencies": {
+    "sass": "^1.54.3"
+  }
+}
