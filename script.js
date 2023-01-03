@@ -72,23 +72,6 @@ moveLeft.addEventListener("click", function () {
 
 // INTERSECTION OBSERVVER FOR SECTIONS
 
-const allSections = document.querySelectorAll(".section");
-
-const showSection = function (entries) {
-  const [entry] = entries;
-
-  if (entry.isIntersecting) entry.target.classList.remove("section--hidden");
-};
-
-const observeSection = new IntersectionObserver(showSection, {
-  root: null,
-  threshold: 0.14,
-});
-
-allSections.forEach((section) => {
-  observeSection.observe(section);
-});
-
 //Toggle menu
 
 const openMenu = document.querySelector(".header__menu");
