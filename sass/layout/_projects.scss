@@ -1,7 +1,7 @@
 .projects {
   color: black;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   @media only screen and(max-width:68.75em) {
     flex-direction: column;
   }
